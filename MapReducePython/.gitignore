@@ -1,0 +1,6 @@
+.vscode
+.python-version
+__pycache__
+playground
+.DS_Store
+test.sh
