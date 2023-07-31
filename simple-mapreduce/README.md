@@ -39,7 +39,7 @@ kubectl proxy --port=8080 &
 curl http://127.0.0.1:8080/api/v1/namespaces/default/pods/mapreduce-master/proxy/compute\?text\=Hello+world+test+test+test+test+test+test+helo+araara+tttt+dddd+araara+test+hello+hi+ih+ih+ih+hi
 ```
 
-You can also use the *query.sh* script as: ./query.sh <input-file>
+You can also use the *query.sh* script as: **./query.sh <input-file>**  
 NB: the input-file is limited in size. The "input-text/a-tale-of-two-cities_short.txt" file
 is a big enough test file, yet not too big that the program couldn't process it.
 
