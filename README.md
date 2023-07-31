@@ -15,13 +15,10 @@ This is a forked/debugged version of https://github.com/DigWing/simple-mapreduce
 
 Also contains:
 >  input-text/  
->  ├── a-tale-of-two-cities_clean_short.txt  
->  ├── a-tale-of-two-cities_clean.txt  
 >  ├── a-tale-of-two-cities.txt  
->  └── clean.sh  
+>  └── a-tale-of-two-cities_short.txt  
 
-. clean.sh --> was used in the process of generating the "clean" version  
-. the "clean_short" version is one that has been created so the "simple-mapreduce"
+. the "short" version is one that has been created so that "simple-mapreduce"
   can process it. Otherwise the query string is too long.
 
 
