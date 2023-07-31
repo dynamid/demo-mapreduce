@@ -3,6 +3,9 @@
 Credit :
 This is a forked/debugged version of https://github.com/DigWing/simple-mapreduce
 
+Information can be found [here](https://medium.com/digitalwing/development-of-a-distributed-computing-system-based-on-mapreduce-and-kubernetes-837fc7f112f9)
+
+
 ## Requirements
 
 ### Kubernetes
@@ -15,7 +18,7 @@ In case of:
 * ... **couldn't get resource list for metrics.k8s.io/v1beta1: the server is currently unable to handle the request**  
 Do: $ kubectl delete apiservice v1beta1.metrics.k8s.io
 
-* Problem with zfs. Force the use of fuse-overlayfs:  
+* Problem with zfs; force the use of fuse-overlayfs:  
 Add "--snapshotter=fuse-overlayfs" to k3s command as in: $ k3s server --snapshotter=fuse-overlayfs11
 
 ## Install and Setup
