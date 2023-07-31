@@ -5,19 +5,17 @@ This is a forked/debugged version of https://github.com/DigWing/simple-mapreduce
 
 ## Requirements
 
-# Kubernetes
+### Kubernetes
 
-We will install **k3s**, a light version of **kubernetes**
-* Installation of k3s
-[Original French Version](https://www.invivoo.com/k3s-kubernetes-enfin-ultra-simpl-leger-devoxx/)
+We will install **k3s**, a light version of **kubernetes**:  
+[Original French Version](https://www.invivoo.com/k3s-kubernetes-enfin-ultra-simpl-leger-devoxx/)  
 [English version](https://www-invivoo-com.translate.goog/k3s-kubernetes-enfin-ultra-simpl-leger-devoxx/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp)
 
 In case of: 
-* ... couldn't get resource list for metrics.k8s.io/v1beta1: the server is currently unable to handle the request
+* ... **couldn't get resource list for metrics.k8s.io/v1beta1: the server is currently unable to handle the request**  
 Do: $ kubectl delete apiservice v1beta1.metrics.k8s.io
 
-* Problem with zfs. Force the use of fuse-overlayfs:
-
+* Problem with zfs. Force the use of fuse-overlayfs:  
 Add "--snapshotter=fuse-overlayfs" to k3s command as in: $ k3s server --snapshotter=fuse-overlayfs11
 
 ## Install and Setup
