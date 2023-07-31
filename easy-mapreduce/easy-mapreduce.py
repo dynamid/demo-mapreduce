@@ -15,11 +15,9 @@ if len(sys.argv)!=2:
 
 file = sys.argv[1]
 mapped_dict = {}
+
 try:
-#    print(file_len("a-tale-of-two-cities.txt"))
-#    with open(file, encoding = 'utf-8') as f:
-    with open("../input-text/a-tale-of-two-cities_clean_short.txt", encoding = 'utf-8') as f:
-        print(file)
+    with open(file, encoding = 'utf-8') as f:
         d = f.read()
         l = d.split()
         for x in l:
@@ -29,7 +27,7 @@ try:
                 mapped_dict[x] = mapped_dict[x] + 1
         tup_view = mapped_dict.items()
         tup_list = list(tup_view)
-        with open("results.txt","w",encoding="utf-8") as ff:
+        with open("easy-mapreduce_results.txt","w",encoding="utf-8") as ff:
             for y in tup_list:
                 ff.write(str(y)+"\n")
 
