@@ -50,8 +50,8 @@ func master() {
 
 		var mapperIps []string
 		ips, _ := net.LookupIP(mapperHost)
-		for _, ip := range ips {
-			mapperIps = append(mapperIps, ip.String())
+//		for _, ip := range ips {
+//			mapperIps = append(mapperIps, ip.String())
 		}
 
 		mapSplitCount := int(math.Ceil(float64(len(words)) / float64(len(mapperIps))))
