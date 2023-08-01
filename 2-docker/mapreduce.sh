@@ -112,7 +112,7 @@ done
 
 python3 orchestration/combine_files.py
 
-echo "------------- RESULT OBTAINED AND WRITTEN INTO HOST DATA FOLDER -------------\n"
+echo "------------------------------ RESULTS GATHERED ------------------------------\n"
 
 echo "----------------------- TERMINATING MAPREDUCE SIMULATION ---------------------\n\n"
 
