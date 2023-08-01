@@ -27,7 +27,7 @@ try:
                 mapped_dict[x] = mapped_dict[x] + 1
         tup_view = mapped_dict.items()
         tup_list = list(tup_view)
-        with open("easy-mapreduce_results.txt","w",encoding="utf-8") as ff:
+        with open("mapreduce_python_results.txt","w",encoding="utf-8") as ff:
             for y in tup_list:
                 ff.write(str(y)+"\n")
 
