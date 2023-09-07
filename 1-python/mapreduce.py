@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import sys
-import datetime
 import os
 
 def file_len(fname):
@@ -27,7 +26,7 @@ try:
                 mapped_dict[x] = mapped_dict[x] + 1
         tup_view = mapped_dict.items()
         tup_list = list(tup_view)
-        with open("mapreduce_python_results.txt","w",encoding="utf-8") as ff:
+        with open("../results/mapreduce_python_results.txt","w",encoding="utf-8") as ff:
             for y in tup_list:
                 ff.write(str(y)+"\n")
 
