@@ -2,6 +2,11 @@
 
 INPUT=$1
 
+if [ "$#" -ne 1 ]; then
+  echo "Usage: $0 <file to process>"
+  exit
+fi
+
 if [ ! -f $INPUT ]; then
   echo "File <$INPUT> does not exist."
   exit
