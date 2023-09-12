@@ -8,16 +8,17 @@ cat mapreduce_k3s_results.txt | sed 's/,/\n/g' | sed 's/{/\n/g' | sed 's/}//g' |
 
 echo "Comparing results of the 1-python and 2-docker examples"
 if [ ! -z "$(diff mapreduce_python_results-formatted.txt mapreduce_docker_results-formatted.txt)" ]; then \
-  echo "Files differ!"
+  echo "Results differ!"
 else
-  echo "Files are identical!"
+  echo "Results are identical!"
 fi
 
+echo
 echo "Comparing results of the 1-python and 3-k3s examples"
 if [ ! -z "$(diff mapreduce_python_results-formatted.txt mapreduce_k3s_results-formatted.txt)" ]; then \
-  echo "Files differ!"
+  echo "Results differ!"
 else
-  echo "Files are identical!"
+  echo "Results are identical!"
 fi
 
 rm *-formatted.txt
