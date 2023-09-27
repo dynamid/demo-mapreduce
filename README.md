@@ -24,10 +24,10 @@ Also contains:
 
 
 >  results/  
->  ├── check_results.sh
->  ├── mapreduce_docker_results.txt
->  ├── mapreduce_k3s_results.txt
->  └── mapreduce_python_results.txt
+>  ├── check_results.sh  
+>  ├── mapreduce_docker_results.txt  
+>  ├── mapreduce_k3s_results.txt  
+>  └── mapreduce_python_results.txt  
 
 The 3rd implementation generates the results in a format different from the first 2.  
 The check_results.sh script converts the results of the 3rd implementation to match that of
