@@ -18,7 +18,7 @@ Also contains:
 >  ├── a-tale-of-two-cities_short.txt  
 >  └── a-tale-of-two-cities.txt  
 
-. the "short" version is one that has been created so the "simple-mapreduce"
+* The "short" version is one that has been created so the "simple-mapreduce"
   can process it. Otherwise the query string is too long.
 
 
