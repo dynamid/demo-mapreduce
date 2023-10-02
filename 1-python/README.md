@@ -6,4 +6,4 @@ Python3.x
 
 $ ./wordfreq.y \<input-file\>
 
-This will generate: ../results/mapredeuce_python_results.txt
+This will generate: ../results/mapreduce_python_results.txt
