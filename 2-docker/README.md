@@ -1,11 +1,11 @@
-# Credit where credit is due
+# Credit 
 
 This is a forked/debugged version of https://github.com/sanjitk7/MapReducePython
 
 # A Distributed MapReduce Algorithmic Simulation with Docker Nodes
 
 
-This project aims to simulate the working of the MapReduce algorithm in a distributed system with the docker - multiple containers act as processes/nodes running in parallel. 
+This project aims to simulate the working of the MapReduce algorithm in a distributed system with docker - multiple containers act as processes/nodes running in parallel. 
 
 A simple example of finding out the frequency of all words in a large text file is taken. Although this looks like a simple problem, for a sufficiently large enough file the computation is costly if done in serial.
 
@@ -22,21 +22,31 @@ A simple example of finding out the frequency of all words in a large text file 
 4. Reduce Phase output: reduced_i_n
 
 ![](assets/fi.png)
-## How to run
 
-### Dependencies
+## Dependencies
 1. Python 3.x
 2. Bash or zsh Shell
 3. Docker
 4. Ruby
 
-###
+## How to run
 
 From your unix terminal:
 
-Clone the repository and go to the project's root directory 
+Add yourself to the docker group:  
+**$** sudo usermod -aG docker <your_username>
 
-Create the docker images: ./mkimgs.sh
+Logout and login again
 
-Run the program: ./mapreduce.sh <input-file>
-It produces as a result: mapreduce_docker_results.txt
+Go to demo-mapreduce/2-docker/
+
+The docker images should already be available on the dhub.ox server so you just need to pull them:  
+**$** ./pullimgs.sh
+
+Alternatevely, in the case they were not, you can build and push them:  
+**$** ./mkimgs.sh
+
+To run the program:  
+**$** ./mapreduce.sh <input-file>
+
+It produces as a result: ../results/mapreduce_docker_results.txt
