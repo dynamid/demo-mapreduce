@@ -40,6 +40,8 @@ From your unix terminal:
 
 * Go to demo-mapreduce/2-docker/
 
+
+
 The docker images should already be available on the dhub.ox server so you just need to pull them:  
 **$** ./pullimgs.sh
 
