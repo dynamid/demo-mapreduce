@@ -33,12 +33,12 @@ A simple example of finding out the frequency of all words in a large text file 
 
 From your unix terminal:
 
-Add yourself to the docker group:  
+* Add yourself to the docker group:  
 **$** sudo usermod -aG docker <your_username>
 
-Logout and login again
+* Logout and login again.
 
-Go to demo-mapreduce/2-docker/
+* Go to demo-mapreduce/2-docker/
 
 The docker images should already be available on the dhub.ox server so you just need to pull them:  
 **$** ./pullimgs.sh
@@ -47,6 +47,6 @@ Alternatevely, in the case they were not, you can build and push them:
 **$** ./mkimgs.sh
 
 To run the program:  
-**$** ./mapreduce.sh <input-file>
+**$** ./mapreduce.sh \<input-file\>
 
 It produces as a result: ../results/mapreduce_docker_results.txt
