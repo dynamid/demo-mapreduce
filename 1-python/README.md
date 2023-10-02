@@ -1,5 +1,9 @@
-Requirements: Have python3 installed
+### Dependencies
 
-To run: ./easy-mapreduce.py <input-file>
+Python3.x
 
-This will generate: easy_mapreduce.txt
+### Run
+
+$ ./wordfreq.y <input-file>
+
+This will generate: ../results/mapredeuce_python_results.txt
