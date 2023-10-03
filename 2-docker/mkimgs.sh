@@ -6,7 +6,7 @@ build_push () {
   cd $1
     docker build --no-cache -t $repo/$1 .
     docker push $repo/$1
-#  cd ..
+  cd ..
 }
 
 echo "--------------------------------- IMAGE CREATION START ------------------------\n\n"
