@@ -8,11 +8,8 @@ A simple dictionary-based counting python program and 2 MapReduce parallel, dist
 
 ## 1-python/wordfreq.py  
 
-Python code extracted from the second example.  
-  It simply uses a dictionnary and does a +1 on each word's entry.
+It simply uses a dictionnary and does a +1 on each word's entry.
 
-
-2 different versions of the MapReduce algorithm, both including a description of MapReduce:
 
 ## 2-docker/mapreduce.sh  
 This is a forked/debugged version of https://github.com/sanjitk7/MapReducePython
