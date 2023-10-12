@@ -41,8 +41,9 @@ From your unix terminal:
 * Go to demo-mapreduce/2-docker/
 
 
+We are using a local docker repository on our platform; dhub.ox.  
 
-The docker images are available on the dhub.ox server so you just need to pull them:  
+The docker images are already available on dhub.ox, so you just need to pull them:  
 **$** ./pullimgs.sh
 
 To run the program:  
