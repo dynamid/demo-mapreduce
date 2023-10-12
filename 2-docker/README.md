@@ -52,4 +52,8 @@ To run the program:
 For the sake of this demo, use:  
 **$** ./mapreduce.sh ../input-text/a-tale-of-two-cities.txt
 
+You will be asked how many nodes you wish to use. On this exemple the "nodes" are actually processes on your node.  
+The third example will show you how to use orchestration in order to split the workload on different physical machines.  
+In case something went wrong (that's impossible!! :) ), run ./clean.sh and rerun the mapreduce.sh script.
+
 It produces as a result: ../results/mapreduce_docker_results.txt
