@@ -32,7 +32,7 @@ can process it. Otherwise the query string would be too long.
 >  └── check_results.sh  
 
 The 3rd implementation generates the results in a format different from the first 2.  
-The *check_results.sh* script can be used after the 3 exemples have been run, to compare their results.  
+The *check_results.sh* script can be used after the 3 exemples have been run, on the same file, to compare their results.  
 
 It converts the results of the 3rd implementation to match the format of
 the first two, so we can make sure the 3 results match.
