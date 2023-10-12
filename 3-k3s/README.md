@@ -16,7 +16,7 @@ We will install **k3s**, a light version of **kubernetes**:
 
 **Of particular importance:**  
 In order to fully benefit from kubernetes you want to setup several agent nodes. Is is not mandatory though.  
-To do so, follow the relative section at the above link(s)
+To do so, read the useful section at the above link(s)
 
 In case of: 
 * ... **couldn't get resource list for metrics.k8s.io/v1beta1: the server is currently unable to handle the request**  
