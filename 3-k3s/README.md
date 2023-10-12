@@ -29,14 +29,8 @@ Add "--snapshotter=fuse-overlayfs" to k3s command as in:
 
 ## Install and Setup
 
-Once you have deployed the cluster and connected to it (for access via `kubectl`), you need to run 
-the **create.sh** script:
-```
-#!/bin/sh
-kubectl create -f mapreduce-reduce.yaml
-kubectl create -f mapreduce-map.yaml
-kubectl create -f mapreduce-master.yaml
-```
+Once you have deployed the cluster and connected to it (for access via `kubectl`)  
+run the **create.sh** script:
 
 After waiting a little while for the system to deploy, you can start experimenting:
 
@@ -50,8 +44,8 @@ You can also use the *mapreduce.sh* script as: **./mapreduce.sh \<input-file\>**
 For the sake of this demo, use:  
 **$** ./mapreduce.sh ../input-text/a-tale-of-two-cities.txt
 
-NB: the input-file is limited in size. The "input-text/a-tale-of-two-cities_short.txt" file
-is a big enough test file, yet not too big that the program couldn't process it.
+NB: As previously mentionned (if you read everything), the original novel is too long to be processed by the
+program as it is. Therefore we have shortened it.
 
 A future version of the program will overcome this limitation by passing to curl a file instead of a series of words.
 
