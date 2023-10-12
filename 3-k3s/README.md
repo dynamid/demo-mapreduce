@@ -14,7 +14,7 @@ We will install **k3s**, a light version of **kubernetes**:
 [Original French Version](https://www.invivoo.com/k3s-kubernetes-enfin-ultra-simpl-leger-devoxx/)  
 [English version](https://www-invivoo-com.translate.goog/k3s-kubernetes-enfin-ultra-simpl-leger-devoxx/?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp)
 
-Of particular importance:  
+**Of particular importance:**  
 In order to fully benefit from kubernetes you want to setup several agent nodes. Is is not mandatory though.  
 To do so, follow the relative section at the above link(s)
 
