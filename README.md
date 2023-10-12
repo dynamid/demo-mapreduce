@@ -23,8 +23,8 @@ Also contains:
 >  input-text/  
 >  └── a-tale-of-two-cities.txt  
 
-* This is a cut-down  version of the original text, created so the "k3s" program
-  can process it. Otherwise the query string would be too long.
+This is a cut-down  version of the original text, created so the "k3s" program
+can process it. Otherwise the query string would be too long.
 
 
 
@@ -32,6 +32,8 @@ Also contains:
 >  └── check_results.sh  
 
 The 3rd implementation generates the results in a format different from the first 2.  
-The check_results.sh script converts the results of the 3rd implementation to match that of
-the first two, so we can compare the respective results and make sure they match.
+The *check_results.sh* script can be used after the 3 exemples have been run, to compare their results.  
+
+It converts the results of the 3rd implementation to match the format of
+the first two, so we can make sure the 3 results match.
 
