@@ -21,11 +21,10 @@ This is a forked/debugged version of https://github.com/DigWing/simple-mapreduce
 
 Also contains:
 >  input-text/  
->  ├── a-tale-of-two-cities_short.txt  
 >  └── a-tale-of-two-cities.txt  
 
-* The "short" version is one that has been created so the "k3s" program
-  can process it. Otherwise the query string is too long.
+* This is a cut-down  version of the original text, created so the "k3s" program
+  can process it. Otherwise the query string would be too long.
 
 
 
