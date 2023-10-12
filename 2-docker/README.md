@@ -48,5 +48,7 @@ The docker images are available on the dhub.ox server so you just need to pull t
 To run the program:  
 **$** ./mapreduce.sh \<input-file\>
 
-For the sake of this demo, use ./mapreduce.sh ../input-text/a-tale-of-two-cities.txt
+For the sake of this demo, use:  
+**$** ./mapreduce.sh ../input-text/a-tale-of-two-cities.txt
+
 It produces as a result: ../results/mapreduce_docker_results.txt
