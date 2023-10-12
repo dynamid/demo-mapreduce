@@ -42,13 +42,11 @@ From your unix terminal:
 
 
 
-The docker images should already be available on the dhub.ox server so you just need to pull them:  
+The docker images are available on the dhub.ox server so you just need to pull them:  
 **$** ./pullimgs.sh
-
-Alternatevely, in the case they were not, you can build and push them:  
-**$** ./mkimgs.sh
 
 To run the program:  
 **$** ./mapreduce.sh \<input-file\>
 
+For the sake of this demo, use ./mapreduce.sh ../input-text/a-tale-of-two-cities.txt
 It produces as a result: ../results/mapreduce_docker_results.txt
