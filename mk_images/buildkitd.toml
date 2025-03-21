@@ -1,0 +1,6 @@
+debug = true
+[registry."dhub.ox"]
+  ca=["oxCA.pem"]
+#  [[registry."dhub.ox".keypair]]
+#    key="oxCA.pem"
+#    cert="oxCA.pem"
