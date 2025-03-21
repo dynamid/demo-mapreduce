@@ -23,5 +23,6 @@ TXT=$(cat $INPUT | tr -s "\n" " "  | sed 's/\ \{1,\}//' | sed 's/[[:space:]]/ /g
 
 FINAL_CMD="$CMD$TXT"
 
-kubectl proxy --port=8080 2>/dev/null & \
+kubectl proxy --port=8080 2>/dev/null &
+sleep 1
 eval $FINAL_CMD > ../results/mapreduce_k3s_results.txt

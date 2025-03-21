@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: mapreduce
-        image: dhub.ox/simple-mapreduce:latest
+        image: dhub.ox/mapreduce-k3s:latest
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
