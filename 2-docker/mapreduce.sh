@@ -61,7 +61,7 @@ done
 
 
 echo "------------- INTERMEDIATE COMBINE PHASE INITIATION IN PARALLEL-------------\n"
-docker container run --entrypoint /bin/sh -itd --mount source=mapper_data,destination=/usr/src/app/mapper_data --name combine_node dhub.ox/combine:latest
+docker container run --entrypoint /bin/sh -itd --mount source=mapper_data,destination=/usr/src/app/mapper_data --name combine_node dhub.ox/mapreduce-docker::latest
 docker exec -it combine_node python3 combine.py $chunks
 
 echo "------------- MAP AND COMBINE PHASE TERMINATION -------------\n"
