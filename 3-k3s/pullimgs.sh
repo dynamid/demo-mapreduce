@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker pull dhub.ox/simple-mapreduce
+docker pull dhub.ox/mapreduce-k3s
