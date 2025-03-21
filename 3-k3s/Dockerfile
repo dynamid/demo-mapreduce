@@ -1,6 +1,8 @@
 FROM golang:1.21-rc-alpine3.18
 
-ADD https://github.com/golang/dep/releases/download/v0.5.4/dep-linux-arm  /usr/bin/dep
+ARG TARGETARCH
+
+ADD https://github.com/golang/dep/releases/download/v0.5.4/dep-linux-${TARGETARCH}  /usr/bin/dep
 RUN chmod +x /usr/bin/dep
 
 WORKDIR $GOPATH/src/github.com/DigWing/mapreduce
