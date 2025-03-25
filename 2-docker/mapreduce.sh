@@ -9,6 +9,7 @@ fi
 
 file=$1
 
+./clean.sh
 
 echo "----------------------- INITIALISING MAPREDUCE SIMULATION ---------------------\n\n"
 
@@ -42,7 +43,7 @@ echo "------------- INITIALISING MAP PHASE -------------\n"
 # sudo docker build -t map .
 #cd ..
 
-# Create and Run Containes in Parallel
+# Create and Run Containers in Parallel
 for (( i=1; i<=$chunks; i++ ))
 do
 	temp_name="map_node_$i"
@@ -61,7 +62,8 @@ done
 
 
 echo "------------- INTERMEDIATE COMBINE PHASE INITIATION IN PARALLEL-------------\n"
-docker container run --entrypoint /bin/sh -itd --mount source=mapper_data,destination=/usr/src/app/mapper_data --name combine_node dhub.ox/mapreduce-docker::latest
+docker container run --entrypoint /bin/sh -itd --mount source=mapper_data,destination=/usr/src/app/mapper_data --name combine_node dhub.ox/mapreduce-docker:latest
+#exit
 docker exec -it combine_node python3 combine.py $chunks
 
 echo "------------- MAP AND COMBINE PHASE TERMINATION -------------\n"
