@@ -33,7 +33,7 @@ A simple example of finding out the frequency of all words in a large text file 
 
 From your unix terminal:
 
-* Add yourself to the docker group:  
+* Add yourself to the docker group:
 **$** sudo usermod -aG docker <your_username>
 
 * Logout and login again.
@@ -41,19 +41,17 @@ From your unix terminal:
 * Go to demo-mapreduce/2-docker/
 
 
-We are using a local docker repository on our platform; dhub.ox.  
+We are using a local docker repository on our platform; dhub.ox
+The program will download the docker image if need be. 
 
-The docker images are already available on dhub.ox, so you just need to pull them:  
-**$** ./pullimgs.sh
-
-To run the program:  
+To run the program:
 **$** ./mapreduce.sh \<input-file\>
 
-For the sake of this demo, use:  
+For the sake of this demo, use:
 **$** ./mapreduce.sh ../input-text/a-tale-of-two-cities.txt
 
-You will be asked how many nodes you wish to use. On this exemple the "nodes" are actually processes on your node.  
-The third example will show you how to use orchestration in order to split the workload on different physical machines.  
+You will be asked how many nodes you wish to use. On this exemple the "nodes" are actually processes on your node.
+The third example will show you how to use orchestration in order to split the workload on different physical machines.
 In case something went wrong (that's impossible!! :) ), run ./clean.sh and rerun the mapreduce.sh script.
 
 It produces as a result: ../results/mapreduce_docker_results.txt
